@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main div.page {
+    width: 100%;
+    height: 100%;
+}
+
+svg text {
+  font-size: 32px;
+  text-shadow: 1px 1px 2px white, 0 0 1em blue, 0 0 0.2em blue;
+  cursor: grab;
+}
+
+svg text:active {
+  text-shadow: 1px 1px 2px white, 0 0 2em white, 0 0 1em blue;
+}
