@@ -5,7 +5,7 @@ set -e
 DENO_VERSION='v1.10.2'
 ALEPH_VERSION='v0.3.0-alpha.33'
 
-curl -sSL https://deno.land/x/install/install.sh | sh -s v$DENO_VERSION
+curl -vvvsSL https://deno.land/x/install/install.sh | sh -s v$DENO_VERSION
 /vercel/.deno/bin/deno install --unstable -A -f -n aleph https://deno.land/x/aleph@$ALEPH_VERSION/cli.ts
 /vercel/.deno/bin/deno run -A https://deno.land/x/aleph/install.ts
 /vercel/.deno/bin/aleph build
