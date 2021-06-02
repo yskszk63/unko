@@ -6,12 +6,7 @@ DENO_VERSION='v1.10.3'
 ALEPH_VERSION='v0.3.0-alpha.33'
 export PATH=/vercel/.deno/bin:$PATH
 
-echo "======"
-uname -a
 curl -fsSL https://deno.land/x/install/install.sh | sh -s $DENO_VERSION
-chmod 777 import_map.json
-cat ./import_map.json
-echo 'await Deno.readTextFile("./import_map.json")' | deno -Ldebug
 deno install --unstable -A -f -n aleph https://deno.land/x/aleph@$ALEPH_VERSION/cli.ts
 deno run -A https://deno.land/x/aleph/install.ts
 aleph build
