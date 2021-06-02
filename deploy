@@ -2,7 +2,7 @@
 
 set -e
 
-DENO_VERSION='v1.10.2'
+DENO_VERSION='v1.10.3'
 ALEPH_VERSION='v0.3.0-alpha.33'
 export PATH=/vercel/.deno/bin:$PATH
 
