@@ -2,11 +2,9 @@
 
 set -e
 
-DENO_VERSION='v1.10.3'
-ALEPH_VERSION='v0.3.0-beta.2'
+DENO_VERSION='v1.13.1'
 export PATH=/vercel/.deno/bin:$PATH
 
 curl -fsSL https://deno.land/x/install/install.sh | sh -s $DENO_VERSION
-deno install --unstable -A -f -n aleph https://deno.land/x/aleph@$ALEPH_VERSION/cli.ts
 deno run -A https://deno.land/x/aleph/install.ts
 aleph build
